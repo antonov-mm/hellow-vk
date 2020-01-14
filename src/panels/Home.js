@@ -20,11 +20,39 @@ const Home = ({ id, go, fetchedUser }) => (
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
 			</Cell>
 		</Group>}
-
+		<Group title="Group title" description="Group description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+        <List>
+          <Cell>
+            One
+          </Cell>
+          <Cell>
+            Two
+          </Cell>
+          <Cell>
+            Three
+          </Cell>
+        </List>
+      </Group>
 		<Group title="Navigation Example">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik">
 					Нажми на меня
+				</Button>
+			</Div>
+		</Group>
+
+		<Group title="Второе меню">
+			<Div>
+				<Button size="xl" level="2" onClick={go} data-to="persik">
+					Нажми на меня
+				</Button>
+			</Div>
+		</Group>
+
+		<Group title="тест">
+			<Div>
+				<Button size="xl" level="2" onClick={go} data-to="test">
+					Test
 				</Button>
 			</Div>
 		</Group>
