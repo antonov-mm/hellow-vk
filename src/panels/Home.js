@@ -53,11 +53,11 @@ const Home = ({ id, go, fetchedUser }) => (
           </Cell>
 		</Group>}
 		<Group title="Яндекс.Такси">
-			<Cell>
+			<Div>
             	<InfoRow title="Промокод от 14.01.2020">
               		Промокод для приложения Яндекс.Такси на 500 рублей: YAD500.
             	</InfoRow>
-          	</Cell>
+          	</Div>
           	<Cell>
             	<InfoRow title="Промокод от 10.12.2019">
               		Промокод для приложения Яндекс.Такси на 200 рублей: YAD200.
