@@ -12,7 +12,7 @@ import Tabs from '@vkontakte/vkui/dist/components/Tabs/Tabs';
 import List from '@vkontakte/vkui/dist/components/List/List';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
-import Icon24About from '@vkontakte/icons/dist/24/about';
+import Icon24Back from '@vkontakte/icons/dist/24/back';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
@@ -100,7 +100,7 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 			</Div>
 		</Group>
-		<Group before={<Icon24About />} title="Информация о приложении" description="" >
+		<Group before={<Icon24Back/>} title="Информация о приложении" description="" >
         <List>
           <Cell>
             <InfoRow title="Последнее обновление">
