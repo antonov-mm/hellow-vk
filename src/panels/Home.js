@@ -100,9 +100,9 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 			</Div>
 		</Group>
-		<Group before={<Icon24Back/>} title="Информация о приложении" description="" >
+		<Group title="<Icon24Back/>Информация о приложении" description="" >
         <List>
-          <Cell before={<Icon24Back/>}>
+          <Cell>
             <InfoRow before={<Icon24Back/>} title="Последнее обновление">
               14 января 2020
             </InfoRow>
