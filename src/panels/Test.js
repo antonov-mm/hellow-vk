@@ -6,6 +6,11 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
+import InfoRow from '@vkontakte/vkui/dist/components/InfoRow/InfoRow';
+import Group from '@vkontakte/vkui/dist/components/Group/Group';
+import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
+import List from '@vkontakte/vkui/dist/components/List/List';
+import Div from '@vkontakte/vkui/dist/components/Div/Div';
 
 const osName = platform();
 
@@ -20,11 +25,11 @@ const Test = props => (
 		</PanelHeader>
 		<Group title="тест" description="">
 	        <List>
-	          <Cell>
+	          <Div>
 	            <InfoRow  title="тест">
 	              тест
 	            </InfoRow>
-	          </Cell>
+	          </Div>
 	        </List>
       	</Group>
 	</Panel>
