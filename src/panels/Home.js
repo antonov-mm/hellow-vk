@@ -20,23 +20,26 @@ const Home = ({ id, go, fetchedUser }) => (
 		<FixedLayout vertical="top">
               <Tabs theme="header" type="buttons">
                 <HorizontalScroll>
-                  <TabsItem
-                    onClick={() => this.setState({ activeTab6: 'all' })}
-                    selected={this.state.activeTab6 === 'all'}
-                  >
+                  <TabsItem>
                     Все
                   </TabsItem>
                   <TabsItem
-                    onClick={() => this.setState({ activeTab6: 'users' })}
-                    selected={this.state.activeTab6 === 'users'}
+                    onClick={() => this.setState({ activeTab6: 'yandex' })}
+                    selected={this.state.activeTab6 === 'yandex'}
                   >
-                    Люди
+                    Яндекс
                   </TabsItem>
-                  <TabsItem
-                    onClick={() => this.setState({ activeTab6: 'groups' })}
-                    selected={this.state.activeTab6 === 'groups'}
-                  >
-                    Сообщества
+                  <TabsItem>
+                    GETT
+                  </TabsItem>
+                  <TabsItem>
+                    Uber
+                  </TabsItem>
+                  <TabsItem>
+                    Везёт
+                  </TabsItem>
+                  <TabsItem>
+                    Ситимобил
                   </TabsItem>
                 </HorizontalScroll>
               </Tabs>
