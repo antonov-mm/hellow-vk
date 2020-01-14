@@ -52,6 +52,30 @@ const Home = ({ id, go, fetchedUser }) => (
             </InfoRow>
           </Cell>
 		</Group>}
+		<Group title="Яндекс.Такси">
+			<Cell>
+            	<InfoRow title="Промокод от 14.01.2020">
+              		Промокод для приложения Яндекс.Такси на 500 рублей: YAD500.
+            	</InfoRow>
+          	</Cell>
+          	<Cell>
+            	<InfoRow title="Промокод от 10.12.2019">
+              		Промокод для приложения Яндекс.Такси на 200 рублей: YAD200.
+            	</InfoRow>
+          	</Cell>
+		</Group>
+		<Group title="Uber">
+			<Cell>
+            	<InfoRow title="Промокод от 14.01.2020">
+              		Промокод для приложения Uber на 500 рублей: UBER500.
+            	</InfoRow>
+          	</Cell>
+          	<Cell>
+            	<InfoRow title="Промокод от 10.12.2019">
+              		Промокод для приложения Uber на 200 рублей: UBER200.
+            	</InfoRow>
+          	</Cell>
+		</Group>
 		<Group title="Navigation Example">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik">
