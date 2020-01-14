@@ -16,9 +16,8 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
-		<PanelHeader>Промокоды для такси</PanelHeader>
-		<FixedLayout vertical="top">
-              <Tabs theme="header" type="buttons">
+		<PanelHeader>
+			<Tabs theme="header" type="buttons">
                 <HorizontalScroll>
                   <TabsItem>
                     Все
@@ -40,7 +39,7 @@ const Home = ({ id, go, fetchedUser }) => (
                   </TabsItem>
                 </HorizontalScroll>
               </Tabs>
-        </FixedLayout>
+		</PanelHeader>
 		{fetchedUser &&
 		<Group title="Информация о пользователе">
 			<Cell
