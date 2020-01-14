@@ -102,8 +102,8 @@ const Home = ({ id, go, fetchedUser }) => (
 		</Group>
 		<Group before={<Icon24Back/>} title="Информация о приложении" description="" >
         <List>
-          <Cell>
-            <InfoRow title="Последнее обновление">
+          <Cell before={<Icon24Back/>}>
+            <InfoRow before={<Icon24Back/>} title="Последнее обновление">
               14 января 2020
             </InfoRow>
           </Cell>
