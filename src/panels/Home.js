@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
+import InfoRow from '@vkontakte/vkui/dist/components/InfoRow/InfoRow';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import List from '@vkontakte/vkui/dist/components/List/List';
@@ -11,9 +12,9 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
-		<PanelHeader>Новое приложение</PanelHeader>
+		<PanelHeader>Промокоды для такси</PanelHeader>
 		{fetchedUser &&
-		<Group title="User Data Fetched with VK Connect">
+		<Group title="Информация о пользователе">
 			<Cell
 				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
 				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
@@ -21,19 +22,6 @@ const Home = ({ id, go, fetchedUser }) => (
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
 			</Cell>
 		</Group>}
-		<Group title="Group title" description="Group description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
-        <List>
-          <Cell>
-            One
-          </Cell>
-          <Cell>
-            Two
-          </Cell>
-          <Cell>
-            Three
-          </Cell>
-        </List>
-      </Group>
 		<Group title="Navigation Example">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik">
@@ -57,6 +45,20 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 			</Div>
 		</Group>
+		<Group title="Информация о приложении" description="">
+        <List>
+          <Cell>
+            <InfoRow title="Последнее обновление">
+              14 января 2020
+            </InfoRow>
+          </Cell>
+          <Cell>
+            <InfoRow title="Версия приложения">
+              0.1 beta
+            </InfoRow>
+          </Cell>
+        </List>
+      </Group>
 	</Panel>
 );
 
