@@ -23,10 +23,7 @@ const Home = ({ id, go, fetchedUser }) => (
                   <TabsItem>
                     Все
                   </TabsItem>
-                  <TabsItem
-                    onClick={() => this.setState({ activeTab6: 'yandex' })}
-                    selected={this.state.activeTab6 === 'yandex'}
-                  >
+                  <TabsItem>
                     Яндекс
                   </TabsItem>
                   <TabsItem>
@@ -43,7 +40,7 @@ const Home = ({ id, go, fetchedUser }) => (
                   </TabsItem>
                 </HorizontalScroll>
               </Tabs>
-            </FixedLayout>
+        </FixedLayout>
 		{fetchedUser &&
 		<Group title="Информация о пользователе">
 			<Cell
