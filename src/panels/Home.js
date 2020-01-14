@@ -5,7 +5,11 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import InfoRow from '@vkontakte/vkui/dist/components/InfoRow/InfoRow';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
+import TabsItem from '@vkontakte/vkui/dist/components/TabsItem/TabsItem';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
+import HorizontalScroll from '@vkontakte/vkui/dist/components/HorizontalScroll/HorizontalScroll';
+import FixedLayout from '@vkontakte/vkui/dist/components/FixedLayout/FixedLayout';
+import Tabs from '@vkontakte/vkui/dist/components/Tabs/Tabs';
 import List from '@vkontakte/vkui/dist/components/List/List';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
@@ -13,6 +17,30 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader>Промокоды для такси</PanelHeader>
+		<FixedLayout vertical="top">
+              <Tabs theme="header" type="buttons">
+                <HorizontalScroll>
+                  <TabsItem
+                    onClick={() => this.setState({ activeTab6: 'all' })}
+                    selected={this.state.activeTab6 === 'all'}
+                  >
+                    Все
+                  </TabsItem>
+                  <TabsItem
+                    onClick={() => this.setState({ activeTab6: 'users' })}
+                    selected={this.state.activeTab6 === 'users'}
+                  >
+                    Люди
+                  </TabsItem>
+                  <TabsItem
+                    onClick={() => this.setState({ activeTab6: 'groups' })}
+                    selected={this.state.activeTab6 === 'groups'}
+                  >
+                    Сообщества
+                  </TabsItem>
+                </HorizontalScroll>
+              </Tabs>
+            </FixedLayout>
 		{fetchedUser &&
 		<Group title="Информация о пользователе">
 			<Cell
