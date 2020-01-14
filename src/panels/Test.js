@@ -16,8 +16,17 @@ const Test = props => (
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Я персик
+			Переход в другое меню
 		</PanelHeader>
+		<Group title="тест" description="">
+	        <List>
+	          <Cell>
+	            <InfoRow  title="тест">
+	              тест
+	            </InfoRow>
+	          </Cell>
+	        </List>
+      	</Group>
 	</Panel>
 );
 

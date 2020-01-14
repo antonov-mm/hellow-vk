@@ -77,22 +77,6 @@ const Home = ({ id, go, fetchedUser }) => (
             	</InfoRow>
           	</Div>
 		</Group>
-		<Group title="Navigation Example">
-			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Нажми на меня
-				</Button>
-			</Div>
-		</Group>
-
-		<Group title="Второе меню">
-			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Нажми на меня
-				</Button>
-			</Div>
-		</Group>
-
 		<Group title="тест">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="test">
@@ -100,11 +84,11 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 			</Div>
 		</Group>
-		<Group title="{<Icon24Back/>}Информация о приложении" description="" >
+		<Group title="Информация о приложении" description="">
         <List>
           <Cell>
-            <InfoRow before={<Icon24Back/>} title="Последнее обновление">
-              <Icon24Back/>14 января 2020
+            <InfoRow  title="Последнее обновление">
+              14 января 2020
             </InfoRow>
           </Cell>
           <Cell>
