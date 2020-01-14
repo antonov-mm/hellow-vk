@@ -10,14 +10,16 @@ import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import HorizontalScroll from '@vkontakte/vkui/dist/components/HorizontalScroll/HorizontalScroll';
 import FixedLayout from '@vkontakte/vkui/dist/components/FixedLayout/FixedLayout';
 import Tabs from '@vkontakte/vkui/dist/components/Tabs/Tabs';
+import Layout from '@vkontakte/vkui/dist/components/Layout/Layout';
 import List from '@vkontakte/vkui/dist/components/List/List';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
-		<PanelHeader>
-			<Tabs theme="header" type="buttons">
+		<PanelHeader>Промокоды для такси</PanelHeader>
+		<Layout vertical="top">
+              <Tabs theme="header" type="buttons">
                 <HorizontalScroll>
                   <TabsItem>
                     Все
@@ -39,7 +41,7 @@ const Home = ({ id, go, fetchedUser }) => (
                   </TabsItem>
                 </HorizontalScroll>
               </Tabs>
-		</PanelHeader>
+        </Layout>
 		{fetchedUser &&
 		<Group title="Информация о пользователе">
 			<Cell
