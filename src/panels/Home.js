@@ -45,8 +45,12 @@ const Home = ({ id, go, fetchedUser }) => (
 				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
 			>
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
-				{`${fetchedUser.bdate}`}
 			</Cell>
+			<Cell>
+            <InfoRow title="Дата рождения">
+              {`${fetchedUser.bdate}`}
+            </InfoRow>
+          </Cell>
 		</Group>}
 		<Group title="Navigation Example">
 			<Div>
